@@ -16,7 +16,7 @@
   }
   
   .container {
-    max-width: 600px;
+    max-width: 200px;
     margin: 0 auto;
   }
   
@@ -38,6 +38,3 @@
     margin: 20px;
   }
 
- section {
-      padding: 0 10%;
- }
