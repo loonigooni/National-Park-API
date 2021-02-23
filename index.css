@@ -37,12 +37,7 @@
     flex: 1;
     margin: 20px;
   }
-  
-  @media all and (min-width: 800px) {
-    section {
+
+ section {
       padding: 0 10%;
-    }
-    .group {
-      flex-direction: row;
-    }
-  }
+ }
