@@ -30,7 +30,14 @@ function getParkData(query, maxResults) {
 function displayParkData(responseJson, maxResults){
     console.log(responseJson);
     let results = [];
-    for (let i = 0; i < maxResults; i++) {
+    let size = 0;
+    if (maxResults > responseJson.data.length) {
+        size = responseJson.data.length;
+    }
+    else {
+        size = maxResults;
+    }
+    for (let i = 0; i < size; i++) {
         results.push(
             `<div class=group>
                 <div class="item">
