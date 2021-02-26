@@ -31,6 +31,7 @@ function displayParkData(responseJson, maxResults){
     console.log(responseJson);
     let results = [];
     let size = 0;
+    $('.results').empty();
     if (maxResults > responseJson.data.length) {
         size = responseJson.data.length;
     }
