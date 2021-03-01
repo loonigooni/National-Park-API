@@ -4,7 +4,7 @@ const apiKey = 'hyvLmapUStPIF3F9X89k1jgkltYXM78QjdbMpysy';
 const searchURL = 'https://developer.nps.gov/api/v1/parks';
 
 function formatQueryParams(params) {
-    const queryItems = Object.keys(params);
+    const queryItems = Object.keys(params)
         .map(key => `${encodeURIComponent(key)} = ${encodeURIComponent(params[key])}`)
     return queryItems.join('&');
 }
@@ -50,9 +50,10 @@ function displayParkData(responseJson, maxResults){
                  <div class ="item">
                     <h3><a href="${responseJson.data[i].url}">${responseJson.data[i].url}</a></h3>
                 </div>
-            </div>`)
-        $('.results').html(results);
-        $('.section').removeClass('hidden');
+            </div>`
+        );
+    $('.results').html(results);
+    $('.section').removeClass('hidden');
     }
 }
 
